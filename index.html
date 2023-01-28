@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>New Weather App 2.0</title>
+   
+      <video loop muted autoplay id="myVideo" class="fullsacreen-bg_video">
+           <source src="videos/clouds.mp4" type="video/mp4">
+      </video>
+</head>
+
+<body>
+  
+ <div class="container">
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-8 col-lg-6 col-xl-4">
+              <h3 class="mb-4 pb-2 fw-normal title">Check the Weather Forecast</h3>
+
+              <div class="input-group rounded mb-3">
+                <input type="search" class="form-control rounded" placeholder="City" aria-label="Search"
+                  aria-describedby="search-addon" id="search-field"/>
+                <a href="#!" type="button">
+                  <span class="input-group-text border-1 fw-bold check" id="searchButton">
+                    Check!
+                  </span>
+                </a>
+              </div>
+              <div class="mb-4 ">
+                <div class="form-check form-check-inline">
+
+                  <button type="button" class="btn active1" id="celecius">To Celsius</button>
+
+                </div>
+      
+                <div class="form-check form-check-inline">
+                  <button type="button" class="btn" id="faranhait">To Farenheit</button>
+                </div>
+              </div>
+      
+              <div class="card shadow-0 border">
+                <div class="card-body p-4">
+                  <div class="row">
+                    <div class="col-6">
+                      <h4 class="mb-1 sfw-normal" id="city-name"">New York</h4>
+                      <p class="mb-2" id="dayTime">Time: <strong>12:00</strong></p>
+                      
+                    </div>
+                    <div class="col-6">
+                      <img id="current-icon" src="" alt="">
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <p class="mb-2" >Current temperature: <strong id="current-temp">5.42°C</strong></p>
+                  <p class="mb-2" >Wind Speed: <strong id="wind-speed">4 km/hr </strong></p>
+                  <p class="mb-2" >Humidity: <strong id="air-humidity">90% </strong></p>
+                  <p >Feels like: <strong id="feels-like">4.37°C</strong></p>
+                  <p >Max: <strong id="high">6.11°C</strong> ,  Min: <strong  id="low"> 3.89°C</strong></p>
+      
+                  <div class="d-flex flex-row align-items-center">
+                    <p class="mb-0 me-4" id="weather-description">Scattered Clouds</p>
+                    <i class="fas fa-cloud fa-3x" style="color: #eee;"></i>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+        
+      </section>
+    </div>
+   
+      <script src="script.js"></script>
+      
+</body>
+
+</html>
