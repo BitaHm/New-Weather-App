@@ -5,13 +5,13 @@
 }
 
 
-#myVideo {
+body {
+  background-image: url("videos/sky3.jpg");
     position: fixed;
-    object-fit: cover;
+    background-size: cover;
     z-index:-10;
     width: 100%;
     height: 100%;
-
   }
 
 .title {
